@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="portfolio-con">
+        <ul class="navlist">
+            <li><a href="#portfolio-con">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+<div class="left-con"> 
+   <div class="icons">
+    <i class="fa-brands fa-linkedin-in"></i>
+    <i class="fa-brands fa-github"></i>
+   </div>
+   <div class="content">
+    <h2>Hi! I Am</h2><h1>Simran Kumari</h1>
+    <p class="detail">To secure a challenging role in the tech industry as a Computer Science professional, utilizing my skills in programming, web development, and problem-solving to contribute to innovative projects.</p>
+
+    <div class="btn-con">
+        <button>Hire Me</button>
+        <button>View Project</button>
+    </div></div>   
+</div>
+    <div class="right-con">
+    <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    </div>
+    </div>
+    <!-----about--->
+    <div id="about">
+        <div class="cont">
+            <div class="row">
+                <div class="about-col">
+                    <h1 class="section-title">About Me</h1>
+        <p class="about-text">
+            I am a Computer Science enthusiast passionate about technology and problem-solving. Currently, I am pursuing my B.Tech in Computer Science
+             from Banasthali Vidyapith (Expected Graduation: May 2027). My goal is to leverage my skills in programming and web development to contribute 
+             to innovative and impactful projects in the tech industry.
+             My interests extend to web development where I focus on building user-friendly and efficient websites using HTML, CSS, and JavaScript.
+        </p>
+        <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links " onclick="opentab('Education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="Skills">
+            <ul>
+                <li><span>Programming Languages:</span><br>C, C++, Beginner level Java</li>
+                <li><span>Web Development:</span><br> HTML, CSS, Basic knowledge JavaScript</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="Experience">
+            <ul>
+                <li>Currently seeking opportunities to gain industry experience</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2023-27</span><br>Banasthali Vidyapith</li>
+                </ul>
+            </div>
+        </div>
+                </div>
+                <div class="about-col2"></div>
+            </div> 
+        </div>
+    <!------contact------>
+    <div id="contact">
+        <div class="conta">
+            <div class="row">
+              <div id="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>simran2005bgs@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>9334376697</p>
+                <a href="SIMRAN KUMARI.pdf"Download class=" btn btn2">Download Cv</a>
+            </div>
+            <div id="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="Submit" class="btn1">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
